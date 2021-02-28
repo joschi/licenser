@@ -73,6 +73,8 @@ gradlePlugin {
     plugins {
         licenserPlugin {
             id = 'com.github.joschi.licenser'
+            displayName = 'licenser'
+            description = project.description
             implementationClass = 'org.cadixdev.gradle.licenser.Licenser'
         }
     }
@@ -81,13 +83,5 @@ gradlePlugin {
 pluginBundle {
     website = 'https://github.com/joschi/licenser'
     vcsUrl = 'https://github.com/joschi/licenser'
-    description = project.description
     tags = ['license', 'license-header']
-
-    plugins {
-        licenserPlugin {
-            id = 'com.github.joschi.licenser'
-            displayName = 'licenser'
-        }
-    }
 }
