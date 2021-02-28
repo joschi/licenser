@@ -10,9 +10,9 @@ plugins {
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
-group = 'org.cadixdev.gradle'
+group = 'com.github.joschi.licenser'
 version = '0.6.0-SNAPSHOT'
-description = 'A simple license header manager for Gradle'
+description = 'A simple license header manager for Gradle (fork of org.cadixdev.licenser)'
 
 repositories {
     gradlePluginPortal()
@@ -72,21 +72,21 @@ task groovydocJar(type: Jar, dependsOn: groovydoc) {
 gradlePlugin {
     plugins {
         licenserPlugin {
-            id = 'org.cadixdev.licenser'
+            id = 'com.github.joschi.licenser'
             implementationClass = 'org.cadixdev.gradle.licenser.Licenser'
         }
     }
 }
 
 pluginBundle {
-    website = 'https://www.cadixdev.org/'
-    vcsUrl = 'https://github.com/CadixDev/licenser'
+    website = 'https://github.com/joschi/licenser'
+    vcsUrl = 'https://github.com/joschi/licenser'
     description = project.description
-    tags = ['license']
+    tags = ['license', 'license-header']
 
     plugins {
         licenserPlugin {
-            id = 'org.cadixdev.licenser'
+            id = 'com.github.joschi.licenser'
             displayName = 'licenser'
         }
     }

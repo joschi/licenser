@@ -42,7 +42,7 @@ class LicenserPluginFunctionalTest extends Specification {
         new File(projectDir, "settings.gradle") << ""
         new File(projectDir, "build.gradle") << """
             plugins {
-                id('org.cadixdev.licenser')
+                id('com.github.joschi.licenser')
             }
         """.stripIndent()
 
@@ -69,7 +69,7 @@ class LicenserPluginFunctionalTest extends Specification {
         new File(projectDir, "build.gradle") << """
             plugins {
                 id('java')
-                id('org.cadixdev.licenser')
+                id('com.github.joschi.licenser')
             }
             
             license {
@@ -109,7 +109,7 @@ class LicenserPluginFunctionalTest extends Specification {
         new File(projectDir, "build.gradle") << """
             plugins {
                 id('java')
-                id('org.cadixdev.licenser')
+                id('com.github.joschi.licenser')
             }
             
             license {
@@ -148,7 +148,7 @@ class LicenserPluginFunctionalTest extends Specification {
         new File(projectDir, "settings.gradle") << ""
         new File(projectDir, "build.gradle") << """
             plugins {
-                id('org.cadixdev.licenser')
+                id('com.github.joschi.licenser')
             }
         """.stripIndent()
 
@@ -173,7 +173,7 @@ class LicenserPluginFunctionalTest extends Specification {
         new File(projectDir, "settings.gradle") << ""
         new File(projectDir, "build.gradle") << """
             plugins {
-                id('org.cadixdev.licenser')
+                id('com.github.joschi.licenser')
                 id('java')
             }
             sourceSets {
@@ -203,7 +203,7 @@ class LicenserPluginFunctionalTest extends Specification {
         def sourceFile = new File(sourcesDir, "source.c") << "TEST"
         new File(projectDir, "build.gradle") << """
             plugins {
-                id('org.cadixdev.licenser')
+                id('com.github.joschi.licenser')
             }
             
             license {
@@ -255,7 +255,7 @@ class LicenserPluginFunctionalTest extends Specification {
             }
 
             plugins {
-                id('org.cadixdev.licenser')
+                id('com.github.joschi.licenser')
             }
             apply plugin: 'com.android.application'
             
