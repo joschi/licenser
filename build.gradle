@@ -11,7 +11,7 @@ sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 group = 'com.github.joschi.licenser'
-version = '0.6.1-SNAPSHOT'
+version = '0.6.1'
 description = 'A simple license header manager for Gradle (fork of org.cadixdev.licenser)'
 
 repositories {
